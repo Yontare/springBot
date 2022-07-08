@@ -17,11 +17,6 @@
             <artifactId>telegrambots-spring-boot-starter</artifactId>
             <version>6.1.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.tg.bot</groupId>
-            <artifactId>persistence</artifactId>
-            <version>${revision}${changelist}</version>
-        </dependency>
     </dependencies>
 
 </project>

@@ -6,7 +6,6 @@
     <modules>
         <module>app</module>
         <module>bot</module>
-        <module>persistence</module>
         <module>web</module>
     </modules>
     <parent>

@@ -1,4 +1,4 @@
-package org.tg.bot.bot.yontarebot;
+package org.tg.bot.bot.restartbot;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -6,15 +6,9 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.tg.bot.persistence.service.MessageService;
 
 @Component
-public class YontareBot extends TelegramLongPollingBot {
-    private final MessageService messageService;
-
-    public YontareBot(MessageService messageService) {
-        this.messageService = messageService;
-    }
+public class RestartBot extends TelegramLongPollingBot {
 
     @Value("${tg.bot.name}")
     private String name;
